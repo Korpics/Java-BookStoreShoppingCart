@@ -25,11 +25,11 @@ public class ShoppingCart {
  public void deleteCartItem(int index){
   try 
   {
-  cartItems.remove(index)
+  cartItems.remove(index);
   }
-  catch(IndexOutOfBoundsException as e)
+  catch(IndexOutOfBoundsException e)
   {
-    return e;
+  System.out.println("error");
   }
  }
 
